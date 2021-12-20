@@ -41,7 +41,7 @@ bot.on("callback_query", async(lol) => {
     user = tele.getUser(lol.callbackQuery.from)
     const isGroup = lol.chat.type.includes("group")
     const groupName = isGroup ? lol.chat.title : ""
-    if (!isGroup) console.log(chalk.whiteBright("├"), chalk.cyanBright("[ ACTIONS ]"), chalk.whiteBright(callback_data), b.greenBright("from"), chalk.whiteBright(user.full_name))
+    if (!isGroup) console.log(chalk.whiteBright("├"), chalk.cyanBright("[ ACTIONS ]"), chalk.whiteBright(callback_data), chalk.greenBright("from"), chalk.whiteBright(user.full_name))
     if (isGroup) console.log(chalk.whiteBright("├"), chalk.cyanBright("[ ACTIONS ]"), chalk.whiteBright(callback_data), chalk.greenBright("from"), chalk.whiteBright(user.full_name), chalk.greenBright("in"), chalk.whiteBright(groupName))
     if (callback_data == "help") return await help[callback_data](lol, user.full_name, user_id)
     await help[callback_data](lol, user_id.toString())
