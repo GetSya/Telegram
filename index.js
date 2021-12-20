@@ -184,15 +184,25 @@ case 'pornhub':
                 await lol.replyWithPhoto({ url: `https://melcanz.com/textpro/pornhub?text=${args[0]}&text2=${args[1]}&apikey=${apikey}` })
                 break
 case 'gameover':
+  case 'grafity':
+    case 'grafity2':
                 if (args.length == 0) return await reply(`Example: ${prefix + command} Arasya Arasya`)
                 reply("Tunggu Sebentar, Sedang Proses....")
-                await lol.replyWithPhoto({ url: `https://melcanz.com/textpro/gameover?text=${args[0]}&text2=${args[1]}&apikey=${apikey}` })
+                await lol.replyWithPhoto({ url: `https://melcanz.com/textpro/${command}?text=${args[0]}&text2=${args[1]}&apikey=${apikey}` })
                 break
 case 'toxic':
+  case 'neon':
+    case 'black':
+      case 'circuit':
+        case 'fiction':
+          case 'bp':
+            case 'neonlight':
+              case 'matrix':
+                case 'neonpl':
               jird = args.join(" ")
                 if (args.length == 0) return await reply(`Example: ${prefix + command} Arasya`)
                 reply("Tunggu Sebentar, Sedang Proses....")
-                await lol.replyWithPhoto({ url: `https://melcanz.com/textpro/toxic?text=${jird}&apikey=${apikey}` })
+                await lol.replyWithPhoto({ url: `https://melcanz.com/textpro/${command}?text=${jird}&apikey=${apikey}` })
                 break
 //donglod
 case 'ytmp3':
@@ -248,6 +258,49 @@ case 'igdl':
                 url = `https://hardianto.xyz/api/instagram?url=${args[0]}`
                 result = await fetchJson(url)
                 await lol.replyWithVideo({ url: result.url })
+                break
+//test wibu
+case 'hentai':
+  case 'ass':
+    case 'blowjob':
+      case 'cum':
+        case 'ero':
+           case 'femdom':
+             case 'cuckold':
+               case 'foot':
+                 case 'gangbang':
+                   case 'glasses':
+                     case 'nsfwneko':
+                reply("Tunggu Sebentar, Sedang Proses....")
+                url = `https://melcanz.com/${command}?apikey=&apikey=${apikey}`
+                result = await fetchJson(url)
+                await lol.replyWithPhoto({ url: result.url })
+                break
+case 'loli':
+  case 'randomwaifu':
+      case 'husbu':
+        case 'randomshota':
+          case 'randomkanna':
+                reply("Tunggu Sebentar, Sedang Proses....")
+                url = `https://melcanz.com/${command}?apikey=&apikey=${apikey}`
+                result = await fetchJson(url)
+                await lol.replyWithPhoto({ url: result.url })
+                break
+case 'china':
+  case 'hijab':
+    case 'indon':
+      case 'japan':
+        case 'korea':
+          case 'malay':
+                reply("Wait lagi nyari di ig")
+                url = `https://melcanz.com/${command}?apikey=&apikey=${apikey}`
+                result = await fetchJson(url)
+                await lol.replyWithPhoto({ url: result.url })
+                break
+case 'fakta':
+  case 'bijak':
+                result = await fetchJson(`https://melcanz.com/${command}?apikey=&apikey=${apikey}`)
+                await reply(result.result)
                 break
 case 'test':
                 test = await bot.telegram.getChatMembersCount(lol.message.chat.id)
