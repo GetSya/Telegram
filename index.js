@@ -173,6 +173,10 @@ case 'lolimaker':
                 reply("Tunggu Sebentar, Sedang Proses....")
                 await lol.replyWithPhoto({ url: `https://melcanz.com/lolimaker?text=${args[0]}&text2=${args[1]}&apikey=${apikey}` })
                 break
+case 'ssweb':
+                reply("Tunggu Sebentar, Sedang Proses....")
+                await lol.replyWithPhoto({ url: `https://hardianto.xyz/api/tools/ssweb?url=${args[0]}&apikey=hardianto` })
+                break
 case 'wolflogo':
                 if (args.length == 0) return await reply(`Example: ${prefix + command} Arasya Jojo`)
                 reply("Tunggu Sebentar, Sedang Proses....")
@@ -259,7 +263,7 @@ case 'igdl':
                 result = await fetchJson(url)
                 await lol.replyWithVideo({ url: result.url })
                 break
-//test wibu
+//lain nya
 case 'hentai':
   case 'ass':
     case 'blowjob':
@@ -299,8 +303,14 @@ case 'china':
                 break
 case 'fakta':
   case 'bijak':
+    case 'truth':
+      case 'dare':
                 result = await fetchJson(`https://melcanz.com/${command}?apikey=&apikey=${apikey}`)
                 await reply(result.result)
+                break
+case 'darkjokes':
+                reply("Tunggu Sebentar, Sedang Proses....")
+                await lol.replyWithPhoto({ url: `https://hardianto.xyz/api/darkmeme?apikey=hardianto` })
                 break
 case 'test':
                 test = await bot.telegram.getChatMembersCount(lol.message.chat.id)
